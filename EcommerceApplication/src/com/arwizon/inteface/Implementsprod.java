@@ -21,7 +21,7 @@ public class Implementsprod implements interfaceprod{
 		return p;
 	}
 
-	//@Override
+	
 	public  Customer Purchase_Product(String product_purchase,int qty) {
 		
 		Customer c=new Customer();

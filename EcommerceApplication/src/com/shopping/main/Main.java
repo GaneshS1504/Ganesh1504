@@ -17,7 +17,7 @@ public class Main {
 		System.out.println("press 1 to add product");
 		System.out.println("press 2 to display product");
 		System.out.println("press 3 to search product");
-		System.out.println("press 4 to purchase product");//for customer use
+		System.out.println("press 4 to purchase product");
 		System.out.println("press 5 to exit application");
 		
 		Scanner data=new Scanner(System.in);
@@ -59,8 +59,7 @@ public class Main {
 				        String Mfg_Name=read.next();
 				        System.out.println("enter price of product");
 				        double price=read.nextDouble();
-				       
-				        //boolean bool=true;
+				  
 				        String Dis_per;
 				        while(true)
 				        {
@@ -74,7 +73,7 @@ public class Main {
 				            	  break;   
 				               }
 				        }
-				       // int dis=Integer.parseInt(Dis_per);
+				     
 				       interfaceprod p=new Implementsprod();
 				       ProductInfo p1=p.Addproduct(Productname,no_of_units,description,Mfg_Name,price,Dis_per);
 				        for(int i=0;i<arr.length;i++)
