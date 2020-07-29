@@ -7,7 +7,7 @@ import com.arwizon.shopping.Info.ProductInfo;
 public class Implementsprod implements interfaceprod{
 
 	@Override
-	public ProductInfo Addproduct(String Productname, int no_of_units, String description, String Mfg_Name,double price,int Dis_per) {
+	public ProductInfo Addproduct(String Productname, int no_of_units, String description, String Mfg_Name,double price,String Dis_per) {
 		ProductInfo p=new ProductInfo();
 		p.setProductname(Productname);
 		p.setNo_of_units(no_of_units);

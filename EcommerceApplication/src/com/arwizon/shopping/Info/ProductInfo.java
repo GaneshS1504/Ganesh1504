@@ -8,7 +8,7 @@ public class ProductInfo {
 	private String Description;
 	private String Mfg_Name;
 	private double price;
-	private int Dis_per;
+	private String Dis_per;
 	
 	
 	public ProductInfo()
@@ -75,11 +75,11 @@ public class ProductInfo {
 		this.price = price;
 	}
 
-	public int getDis_per() {
+	public String getDis_per() {
 		return Dis_per;
 	}
 
-	public void setDis_per(int dis_per) {
+	public void setDis_per(String dis_per) {
 		this.Dis_per = dis_per;
 	}
 

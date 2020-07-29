@@ -4,6 +4,7 @@ import com.arwizon.shopping.Info.ProductInfo;
 import com.arwizon.inteface.Implementsprod;
 import com.arwizon.inteface.interfaceprod;
 import com.arwizon.customer.*;
+import com.arwizon.exception.Myexception;
 import java.util.Scanner;
 
 
@@ -34,9 +35,22 @@ public class Main {
 			{
 			      
 			case 1:
-				 
-				        System.out.println("enter productname");
-				        String Productname=read.next();
+				String Productname;
+				 while(true)
+				 {
+					 System.out.println("enter productname");
+				        Productname=read.next();
+				        try {
+				        	regexcheck.check_productname(Productname);
+				        	break;
+				        }catch(Myexception e){
+				        	{
+				        		System.out.println(e.getmessage());
+				        	}
+				        	
+				        }
+				 }
+				        
 				        System.out.println("enter no_of_units");
 				        int no_of_units=read.nextInt();
 				        System.out.println("enter description");
@@ -45,10 +59,22 @@ public class Main {
 				        String Mfg_Name=read.next();
 				        System.out.println("enter price of product");
 				        double price=read.nextDouble();
-				        System.out.println("enter discount percentage");
-				        int Dis_per=read.nextInt();
-				        
-				        
+				       
+				        //boolean bool=true;
+				        String Dis_per;
+				        while(true)
+				        {
+				        	   System.out.println("enter discount percentage");
+						       Dis_per=read.next();
+						       regexcheck reg=new regexcheck();
+				               boolean res=reg.check_regx(Dis_per);
+				               
+				               if(res==true)
+				               {
+				            	  break;   
+				               }
+				        }
+				       // int dis=Integer.parseInt(Dis_per);
 				       interfaceprod p=new Implementsprod();
 				       ProductInfo p1=p.Addproduct(Productname,no_of_units,description,Mfg_Name,price,Dis_per);
 				        for(int i=0;i<arr.length;i++)
