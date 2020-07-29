@@ -116,7 +116,7 @@ public class Main {
 			}
 			break;
 		
-			case 5:
+			case 6:
 	           System.exit(1);
 	           
 			

@@ -23,7 +23,7 @@ public class Customer {
 	
 	public String toString()
 	{
-		return "product name"+":"+this.product_purchase+" "+"qty:"+this.qty;
+		return "product name:"+":"+this.product_purchase+" "+"qty:"+this.qty;
 		
 	}
 
