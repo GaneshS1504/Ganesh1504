@@ -1,5 +1,4 @@
 package com.shopping.main;
-
 import com.arwizon.shopping.Info.ProductInfo;
 import com.arwizon.inteface.Implementsprod;
 import com.arwizon.inteface.interfaceprod;

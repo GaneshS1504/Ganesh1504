@@ -1,5 +1,4 @@
 package com.arwizon.inteface;
-//import com.shopping.main.Main;
 
 import com.arwizon.customer.Customer;
 import com.arwizon.shopping.Info.ProductInfo;
