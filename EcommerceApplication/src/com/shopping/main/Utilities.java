@@ -1,7 +1,7 @@
 package com.shopping.main;
 import com.arwizon.exception.Myexception;
 
-public class regexcheck {
+public class Utilities {
 	
 	public static void check_productname(String Productname) throws Myexception
 	{
@@ -19,7 +19,7 @@ public class regexcheck {
      while(true)
      {
      
-     String regx="[1-9]{1,2}+";
+     String regx="[1-9]{1,2}";
      if(Dis_per.matches(regx))
      {
         return true;

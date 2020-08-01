@@ -1,9 +1,11 @@
 package com.arwizon.inteface;
 
+import java.util.*;
+
 import com.arwizon.customer.Customer;
 import com.arwizon.shopping.Info.ProductInfo;
 
-public class Implementsprod implements interfaceprod{
+public class Implementsprod implements Interfaceprod{
 
 	@Override
 	public ProductInfo Addproduct(String Productname, int no_of_units, String description, String Mfg_Name,double price,String Dis_per) {
@@ -32,21 +34,57 @@ public class Implementsprod implements interfaceprod{
 	}
 
 	@Override
-	public ProductInfo[] search_product(String Name,ProductInfo[] arr) {
-		ProductInfo [] arr1=new ProductInfo[arr.length];
-		int j=0;
+	public Set<ProductInfo> search_product(String Name,Set<ProductInfo> prodList) {
+		//ProductInfo [] arr1=new ProductInfo[prodList.size()];
+		Set<ProductInfo> l=new HashSet<ProductInfo>();
+		//int j=0;
 		
-		for (int i=0;i<arr.length;i++)
+		for (ProductInfo t :prodList)
 		{
-			if(Name.equals(arr[i].getProductname()))
-					{
-				         arr1[j]=arr[i];
-				         j++;
-					}
+			if(t.getProductname().equals(Name))
+			{
+				l.add(t);
+			}
+				
 		}
-		return arr1;
+		return l;
 		
 	}
+
+
+	@Override
+	public Set<ProductInfo> DeleteProduct(int Id, Set<ProductInfo> prodList) {
+		//Set<ProductInfo> s=new HashSet<ProductInfo>(prodList.size());
+		for(ProductInfo i:prodList)
+		{
+			if(i.getProduct_ID()==Id)
+			{
+				prodList.remove(i);
+				break;	
+			}
+			System.out.println();
+		}
+		
+		return prodList;
+	}
+
+
+	@Override
+	public Set<ProductInfo> update(int price1, int PId,Set<ProductInfo> prodList) {
+		//ProductInfo update=new ProductInfo();
+		for(ProductInfo k:prodList)
+		{
+			if(k.getProduct_ID()==PId)
+				k.setNewprice(price1);
+			  //  update=k;
+			break;
+		}
+	
+		
+		return prodList;
+	}
+	
+	
 
 	
 	}

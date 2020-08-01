@@ -60,6 +60,7 @@ public class ProductInfo {
 		Mfg_Name = mfg_Name;
 	}
 	
+	
 	public String toString()
 	{
 		return "product name"+":"+this.Productname+" "+"no of units:"+this.no_of_units+" "+"manufacturer:"+this.Mfg_Name+" "+"Description:"+this.Description+" "+"productId:"+this.Product_ID+" "+"price:"+this.price+" "+"discount rate:"+this.Dis_per;
@@ -81,5 +82,24 @@ public class ProductInfo {
 	public void setDis_per(String dis_per) {
 		this.Dis_per = dis_per;
 	}
+	
+	public void setNewprice(int price1)
+	{
+		this.price=price1;
+	}
+	
+	//public int compareTo(ProductInfo p)
+	//{
+		//System.out.println(p);
+		//{
+			//if(this.getProductname().compareTo(p.getProductname())>0)
+				//return 1;
+			//else if(this.getProductname().compareTo(p.getProductname())<0)
+				//return -1;
+			//else
+				//return 0;
+				
+	//}
 
 }
+
