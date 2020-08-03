@@ -88,18 +88,7 @@ public class ProductInfo {
 		this.price=price1;
 	}
 	
-	//public int compareTo(ProductInfo p)
-	//{
-		//System.out.println(p);
-		//{
-			//if(this.getProductname().compareTo(p.getProductname())>0)
-				//return 1;
-			//else if(this.getProductname().compareTo(p.getProductname())<0)
-				//return -1;
-			//else
-				//return 0;
-				
-	//}
+
 
 }
 

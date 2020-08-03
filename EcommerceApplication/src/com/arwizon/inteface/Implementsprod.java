@@ -37,7 +37,6 @@ public class Implementsprod implements Interfaceprod{
 	public Set<ProductInfo> search_product(String Name,Set<ProductInfo> prodList) {
 		//ProductInfo [] arr1=new ProductInfo[prodList.size()];
 		Set<ProductInfo> l=new HashSet<ProductInfo>();
-		//int j=0;
 		
 		for (ProductInfo t :prodList)
 		{

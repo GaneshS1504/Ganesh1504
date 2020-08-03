@@ -11,7 +11,7 @@ public class Utilities {
         throw new Myexception("product name should be in alphabetes and between 3-8 charcter");
      
      }
-     
+     //
      }
 	
 	public static boolean check_regx(String Dis_per)

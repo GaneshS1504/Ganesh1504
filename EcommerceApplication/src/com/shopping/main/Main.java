@@ -63,7 +63,7 @@ public class Main {
 				while (true) {
 					System.out.println("enter discount percentage");
 					Dis_per = read.next();
-					// regexcheck reg=new regexcheck();
+					
 					boolean res = Utilities.check_regx(Dis_per);
 
 					if (res == true) {
