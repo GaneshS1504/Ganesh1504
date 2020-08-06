@@ -83,9 +83,6 @@ public class Implementsprod implements Interfaceprod{
 		return prodList;
 	}
 	
-	
-
-	
-	}
+}
 
 

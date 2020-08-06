@@ -12,5 +12,4 @@ public interface Interfaceprod {
 	public Set<ProductInfo>search_product(String Name,Set<ProductInfo> prodList);
 	public Set<ProductInfo>DeleteProduct(int Id,Set<ProductInfo> prodList);
 	public Set<ProductInfo> update(int price1,int PId,Set<ProductInfo> prodList);
-
 }

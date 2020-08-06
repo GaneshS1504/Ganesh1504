@@ -1,4 +1,5 @@
 package com.arwizon.customer;
+
 public class Customer {
 	
 	private String product_purchase;

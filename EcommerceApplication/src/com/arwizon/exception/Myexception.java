@@ -11,6 +11,4 @@ public class Myexception extends Exception {
 	{
          return msg;		
 	}
-
-	
 }
