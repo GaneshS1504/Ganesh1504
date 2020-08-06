@@ -88,7 +88,5 @@ public class ProductInfo {
 		this.price=price1;
 	}
 	
-
-
 }
 

@@ -14,4 +14,3 @@ public interface Interfaceprod {
 	public Set<ProductInfo> update(int price1,int PId,Set<ProductInfo> prodList);
 
 }
-//

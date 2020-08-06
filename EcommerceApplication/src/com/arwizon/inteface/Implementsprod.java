@@ -75,7 +75,7 @@ public class Implementsprod implements Interfaceprod{
 		{
 			if(k.getProduct_ID()==PId)
 				k.setNewprice(price1);
-			  //  update=k;
+			  
 			break;
 		}
 	

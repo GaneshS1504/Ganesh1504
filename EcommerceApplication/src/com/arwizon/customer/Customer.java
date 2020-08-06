@@ -25,5 +25,5 @@ public class Customer {
 		return "product name:"+":"+this.product_purchase+" "+"qty:"+this.qty;
 		
 	}
-//
+
 }
