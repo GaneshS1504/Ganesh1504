@@ -5,7 +5,8 @@ import java.util.*;
 
 import com.arwizon.customer.Customer;
 
-public interface Interfaceprod {
+public interface Interfaceprod
+{
 	
 	public ProductInfo Addproduct(String Productname,int no_of_units,String Description,String Mfg_Name,double price,String Dis_per );
 	public Customer Purchase_Product(String product_purchase,int qty);

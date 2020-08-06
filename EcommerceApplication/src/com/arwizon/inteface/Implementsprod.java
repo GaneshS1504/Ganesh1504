@@ -79,8 +79,7 @@ public class Implementsprod implements Interfaceprod{
 			break;
 		}
 	
-		
-		return prodList;
+			return prodList;
 	}
 	
 }

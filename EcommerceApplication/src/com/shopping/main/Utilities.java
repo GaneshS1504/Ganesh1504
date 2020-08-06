@@ -1,7 +1,8 @@
 package com.shopping.main;
 import com.arwizon.exception.Myexception;
 
-public class Utilities {
+public class Utilities 
+{
 	
 	public static void check_productname(String Productname) throws Myexception
 	{

@@ -1,5 +1,6 @@
 package com.arwizon.shopping.Info;
-public class ProductInfo {
+public class ProductInfo 
+{
 	static int  count=100;
 	private String Productname;
 	private int no_of_units;

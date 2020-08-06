@@ -1,5 +1,6 @@
 package com.arwizon.exception;
-public class Myexception extends Exception {
+public class Myexception extends Exception 
+{
 	
 	String msg;
 	public Myexception(String msg)
