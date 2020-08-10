@@ -1,0 +1,130 @@
+body
+{
+	margin: 0;
+	background-image:url(../IMAGE/formimage.jpg) ;
+	
+}
+#header
+{
+
+	position: absolute;
+	width: 100%;
+	top: 0;
+	text-align:center;
+	background-color:navy;
+	height:60px;
+	font-size:30px;
+	color: whitesmoke;
+}
+#heading h2
+{
+	height: 40px;
+	position: absolute;
+	left:580px;
+	top:-40px;
+	
+}
+div img
+{
+	position:absolute;
+	left:20px;
+	top:5px;
+	height:50px;
+}
+
+#form
+{
+	background-color:coral;
+	max-width:600px;
+	margin:80px auto;
+	width:100%;
+	padding:20px;
+	color:black;
+	opacity:0.9;
+	font-size:20px;
+	font-family:'Montserrat',sans-serif;
+	border-radius:10px;
+	border:solid 2px black;
+}
+
+#lname
+{
+	position: absolute;
+	left: 770px;
+	top:112px;
+}
+input:focus
+{
+	background-color:skyblue;
+	
+}
+input
+{
+	
+	border:solid 2px steelblue;
+	margin:5px;
+	padding:10px;
+	border-radius:5px;
+}
+
+#username
+{
+	align-items:center;
+	margin:10px;
+}
+
+input[type="radio"]:focus
+{
+	width:20px;
+	height:15px;
+}
+input[type="password"]
+{
+	display:block;
+	width:50%;
+	border-radius:5px;	
+}
+input[type="email"]
+{
+	display:block;
+	width:50%;
+	border-radius:5px;
+}
+input[type="telephone"]
+{
+	display:block;
+	width:50%;
+	border-radius:5px;
+}
+input[type="submit"]
+{
+	border-radius: 10px;
+	background-color: aquamarine;
+	width: 100px;
+	cursor: pointer;
+	transition: 2s;
+	
+}
+input[type="submit"]:hover
+{
+	transform: scale(1.2,1.2);
+	
+	transition: transform 2s;
+}
+
+input[type="reset"]
+{
+	border-radius: 10px;
+	background-color: aquamarine;
+	width: 100px;
+	cursor: pointer;
+	transition: 2s;
+	
+}
+input[type="reset"]:hover
+{
+	transform: scale(1.2,1.2);
+	
+	transition: transform 2s;
+}
+

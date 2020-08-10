@@ -1,0 +1,230 @@
+body{
+    margin:0;
+}
+
+
+#header
+{
+    background-color:navy;
+    font-size:20px;
+    width:100%;
+    height:70px;
+    position:fixed;
+    z-index:1;
+}
+#header img
+{
+    position: absolute;
+    top:12px;
+    left:25px;
+    height:50px;
+    
+}
+ul
+{
+    list-style: none;
+    position: absolute;
+    right:0;
+    align-items: center;
+    top:0px;
+}
+ul li
+{
+    float:left;
+    padding:10px;
+    margin:5px;
+    
+}
+ul li a
+{
+    
+    text-decoration:none;
+    color:whitesmoke;
+    padding: 10px;
+    transition: 3s;
+    
+}
+ul li a:hover
+{
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: aliceblue;
+    transition:  2s;
+}
+
+
+.container-fluid
+{
+    width: 100%;
+    position: relative;
+    top: 71px;
+    height: 470px;
+}
+.caption
+{
+    animation-name: change;
+    animation-duration: 10s;
+    
+}
+@keyframes change
+{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+.btn.btn.btn-primary{
+    
+    transition: transform 3s;
+
+}
+
+.btn.btn-primary:hover
+{
+    transform: scale(1.5,1.5);
+    transition: transform 2s;
+}
+
+#body
+{
+    
+    position:relative;
+    top:200px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding:15px;
+    height:300px;
+    display: flex;
+}
+#body #company
+{
+    
+    height: 350px;
+    padding:10px;
+    
+}
+#body #article img
+{
+    
+    width:130px;
+    float:right;
+    height:200px;
+}
+
+.card1
+{
+    
+    position: absolute;
+    left:1100px;
+    top: 900px;
+    padding-left: 15px;
+    height: 500px;
+}
+.card-img-top
+{
+     transform: translateY(200px);
+     transition: 2s;
+}
+.card-img-top:hover{
+     transform: translateY(0);
+    transform: scale(0px,0px);
+    transition: transform 2s;
+ }
+.card2
+{
+    
+    position: absolute;
+    top: 900px;
+    left: 750px;
+    padding-left: 15px;
+    height: 500px;
+}
+
+.card3
+{
+    
+    position: absolute;
+    top: 900px;
+    left: 400px;
+    padding-left: 15px;
+    height: 500px;
+}
+.card4
+{
+    
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    padding-left: 15px;
+    height: 500px;
+}
+#footer
+{
+    
+    width:100%;
+    position: relative;
+    top:800px;
+    margin-bottom:0px;
+    background-color:grey;
+    height:200px;
+    margin-bottom: 0px;
+    
+}
+ #footer #left{
+
+    padding:10px;
+}
+
+#footer #left li{
+    list-style: none;
+    padding:2px;
+}
+#footer #left a{
+    text-decoration: none;
+    color:black;
+}
+
+#footer  #center
+{
+    
+    width:150px;
+    position: absolute;
+    top:30px;
+    left:40%;
+    right:60%;  
+}
+
+#footer #center li
+{
+    
+    list-style: none;
+}
+
+#footer #center a
+{
+
+    text-decoration: none;
+    color:black;
+}
+
+#footer  #right
+{
+
+    padding:10px;
+    width:100px;
+    position: absolute;
+    top:10%;
+    right:20%;  
+}
+
+#footer  #right li
+{
+    list-style: none;
+}
+
+#footer  #right a
+{
+    text-decoration: none;
+}
